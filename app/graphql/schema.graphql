@@ -1,0 +1,15 @@
+type Query {
+  getDataRecord(id: Int!): DataRecord
+  getDataRecords(skip: Int, limit: Int): [DataRecord!]!
+}
+
+type Mutation {
+  createDataRecord(name: String!, value: Float!, category: String): DataRecord!
+}
+
+type DataRecord {
+  id: Int!
+  name: String!
+  value: Float!
+  category: String
+}
