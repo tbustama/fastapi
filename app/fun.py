@@ -10,7 +10,7 @@ import json
 # Option 2: Load API key from an environment variable (RECOMMENDED)
 # Make sure you have an environment variable named GOOGLE_API_KEY set with your API key.
 try:
-    api_key = "AIzaSyCZzwEk3eqW_yELggBqsv4e_6pJhwF8mi8"
+    api_key = os.environ.get("GEMINI_KEY")
     if not api_key:
         raise ValueError("GOOGLE_API_KEY environment variable not set.")
     genai.configure(api_key=api_key)
