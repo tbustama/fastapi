@@ -1,6 +1,9 @@
 import google.generativeai as genai
 import os
 import json
+from dotenv import load_dotenv  # Add this import
+
+load_dotenv()  # Load variables from .env file
 
 # --- Configuration ---
 # Option 1: Configure API key directly in the script (NOT RECOMMENDED for production)
