@@ -172,7 +172,7 @@ def for_fun():
         poop = {'poo':12}
         print(f"Fun function is running... {poo == poop}")
     try:
-        with open("fun.json", "r") as f:
+        with open("./app/fun.json", "r") as f:
             data = json.load(f)
             prompt = data.get("prompt", "")
             if not prompt:
